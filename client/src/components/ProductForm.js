@@ -30,7 +30,7 @@ const ProductForm = (props) => {
             <form onSubmit={onSubmitHandler}>
                 Title: <input type='text' value={title} onChange={e=>setTitle(e.target.value)}/>
                 Price: <input type='number' value={price} onChange={e=>setPrice(e.target.value)} />
-                Description: <input type='text' value={description} onChange={e=>setDescription(e.target.value)} />
+                Description: <textarea cols={30} rows={10} type='text' value={description} onChange={e=>setDescription(e.target.value)} />
                 <button  type='submit'  >Create</button>
             </form>
         </>

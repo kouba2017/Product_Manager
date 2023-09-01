@@ -45,7 +45,7 @@ const EditProduct = (props) => {
             </div>
             <div>
                 <label>Description: </label>
-                <input type='text' value={description} onChange={(e)=>setDescription(e.target.value)}/>
+                <textarea cols={30} rows={10} type='text' value={description} onChange={(e)=>setDescription(e.target.value)}/>
             </div>
             <button type='submit'>Edit</button>
         </form>

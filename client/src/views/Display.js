@@ -7,7 +7,7 @@ import ProductList from '../components/ProductList'
 const Main=(props)=> {
     const [products, setProducts]=useState([])
     const removeFromDom =(id)=>{
-        setProducts(products.filter(prod=>prod._id != id))
+        setProducts(products.filter(prod=>prod._id !== id))
     }
     return (
         <div>

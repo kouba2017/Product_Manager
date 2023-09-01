@@ -28,10 +28,14 @@ const ProductList = (props) => {
                     return (
                         <div key={index}>
                             <p >{product.title}</p>
-                            <Link to={`/${product._id}`}>View</Link>
-                            <Link to={`/edit/${product._id}`}>Edit</Link>
+                            <Link to={`/${product._id}`}>
+                                <button style={{backgroundColor:"green"}}>View</button>
+                            </Link>
+                            <Link to={`/edit/${product._id}`}>
+                                <button >Edit</button>
+                            </Link>
                             <Link to={'/'}>
-                                <button onClick={e=>deleteProduct(product._id)} >Delete</button>
+                                <button style={{backgroundColor:"darkred"}} onClick={e=>deleteProduct(product._id)} >Delete</button>
                             </Link>
                         </div>
                         )
